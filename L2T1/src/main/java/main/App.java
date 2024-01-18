@@ -45,8 +45,14 @@ public class App
                         System.out.println("Anna siilin ikä:");
                         String stringAge = scanner.nextLine();
                         int age = Integer.parseInt(stringAge);
+
+                        if(age > 0){
+                            hedgehog = new Hedgehog(name, age);
+                            
+                        }else{
+                            System.out.println("Syöte oli väärä");
+                        }
                         
-                        hedgehog = new Hedgehog(name, age);
                         break;
                     case 3:
                         System.out.println("Monta kierrosta?");
