@@ -12,7 +12,6 @@ public class App
         boolean lopeta = false;
         
         Hedgehog hedgehog = new Hedgehog();
-        System.out.println("moi");
 
 
         while(!lopeta){
@@ -35,8 +34,11 @@ public class App
                         System.out.println("Mitä siili sanoo:");
                         String sanomiset = scanner.nextLine();
 
-                        hedgehog.speak(sanomiset);
-
+                        if (sanomiset.isEmpty()) {
+                            hedgehog.speakEmpty();
+                        }else{
+                            hedgehog.speak(sanomiset);
+                        }
                         break;
 
                     case 2:

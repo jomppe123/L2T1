@@ -20,7 +20,7 @@ public class Hedgehog {
     }
 
     public void speakEmpty(){
-        System.out.println("Olen "+name+" ja ikäni on " + age + ", mutta antaisitko silti syötteen?");
+        System.out.println("Olen "+name+" ja ikäni on " + age + " vuotta, mutta antaisitko silti syötteen?");
     }
 
     public void run(int rounds){
